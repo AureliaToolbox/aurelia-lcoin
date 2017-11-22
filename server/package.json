@@ -1,0 +1,29 @@
+{
+  "name": "aurelia-lcoin-server",
+  "version": "1.0.0",
+  "description": "A server for running lcoin for the aurelia-lcoin project.",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/aureliatoolbox-lcoin/bin/lcoin --network testnet",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AureliaToolbox/aurelia-lcoin.git"
+  },
+  "keywords": [
+    "aurelia",
+    "lcoin",
+    "bcoin",
+    "bitcoin"
+  ],
+  "author": "Patrick Walters",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AureliaToolbox/aurelia-lcoin/issues"
+  },
+  "homepage": "https://github.com/AureliaToolbox/aurelia-lcoin#readme",
+  "dependencies": {
+    "aureliatoolbox-lcoin": "^1.0.0-beta.15"
+  }
+}
