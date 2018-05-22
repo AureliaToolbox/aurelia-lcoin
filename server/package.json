@@ -4,7 +4,7 @@
   "description": "A server for running lcoin for the aurelia-lcoin project.",
   "main": "index.js",
   "scripts": {
-    "start": "./node_modules/aureliatoolbox-lcoin/bin/lcoin --network testnet",
+    "start": "./node_modules/aureliatoolbox-lcoin/bin/lcoin --network testnet --index-address",
     "test": "test"
   },
   "repository": {

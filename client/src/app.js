@@ -1,10 +1,17 @@
+import {Session} from 'services/session';
+
 export class App {
+  static inject = [Session];
+  constructor(session) {
+    this.session = session;
+  }
+
   configureRouter(config, router) {
-    config.title = 'Aurelia';
+    config.title = 'Aurelia Lcoin';
     config.map([
-      { route: ['', 'welcome'], name: 'welcome',      moduleId: 'welcome',      nav: true, title: 'Welcome' },
-      { route: 'users',         name: 'users',        moduleId: 'users',        nav: true, title: 'Github Users' },
-      { route: 'child-router',  name: 'child-router', moduleId: 'child-router', nav: true, title: 'Child Router' }
+      { route: ['', 'wallet'], name: 'wallet', moduleId: 'routes/wallet', nav: true, title: 'Wallet' },
+      { route: 'node-info', name: 'node-info', moduleId: 'routes/node-information', nav: true, title: 'Node Info' },
+      { route: 'explorer', name: 'explorer', moduleId: 'routes/explorer/index', nav: true, title: 'Explorer' }
     ]);
 
     this.router = router;
